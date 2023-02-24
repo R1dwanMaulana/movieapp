@@ -130,25 +130,25 @@ const Home = () => {
 			<div className="flex inline-flex mt-10 mx-2 text-sm">
 				<p
 					onClick={() => handleClick("now-playing")}
-					className="cursor-pointer px-2 bg-rose-500 rounded-md py-1 mx-1 text-white"
+					className="cursor-pointer px-1 bg-blue-500 shadow-blue-500/50 shadow-lg rounded-md py-1 mx-1 text-white font-bold"
 				>
 					Now playing
 				</p>
 				<p
 					onClick={() => handleClick("upcoming")}
-					className="cursor-pointer px-2 bg-rose-500 rounded-md py-1 mx-1 text-white"
+					className="cursor-pointer px-1 bg-blue-500 shadow-blue-500/50 shadow-lg rounded-md py-1 mx-1 text-white font-bold"
 				>
 					Upcoming
 				</p>
 				<p
 					onClick={() => handleClick("top-rated")}
-					className="cursor-pointer px-2 bg-rose-500 rounded-md py-1 mx-1 text-white"
+					className="cursor-pointer px-1 bg-blue-500 shadow-blue-500/50 shadow-lg rounded-md py-1 mx-1 text-white font-bold"
 				>
 					Top rated
 				</p>
 				<p
 					onClick={() => handleClick("popular")}
-					className="cursor-pointer px-2 bg-rose-500 rounded-md py-1 mx-1 text-white"
+					className="cursor-pointer px-1 bg-blue-500 shadow-blue-500/50 shadow-lg rounded-md py-1 mx-1 text-white font-bold"
 				>
 					Popular
 				</p>
@@ -159,15 +159,15 @@ const Home = () => {
 				type="search"
 				placeholder="Cari film"
 				// onKeyup="getMovie"
-				className="max-w-sm mt-8 py-3 px-3 w-11/12 m-3 truncate leading-5 font-medium border-transparent text-gray-800 rounded-lg bg-gray-100 shadow-md"
+				className="max-w-sm mt-8 py-3 px-3 w-11/12 m-3 truncate leading-5 font-medium placeholder-gray-400 border-transparent text-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-700 border-gray-600 focus:border-blue-500 rounded-md focus:outline-none bg-gray-800"
 			/>
 			<button
 				onClick={searchMoviesButton}
 				value={inputValue}
 				className={`${
-					inputValue === "" ? "bg-gray-200" : "bg-cyan-400"
-				} mx-4 px-4 py-2 rounded-lg text-white font-semibold shadow-md transition
-				duration-500`}
+					inputValue === "" ? "bg-gray-500" : "bg-blue-500 shadow-blue-500/50"
+				} mx-4 px-3 py-1 rounded-md text-white font-semibold shadow-lg transition
+				duration-500 text-sm`}
 				disabled={inputValue === ""}
 			>
 				Cari
@@ -176,9 +176,9 @@ const Home = () => {
 				onClick={resetsearchMovies}
 				className={`${
 					moviesNowPlaying.length === defaultMovieNowPlaying.length
-						? "bg-gray-200"
-						: "bg-red-500"
-				} px-4 py-2 rounded-lg text-white font-semibold shadow-md`}
+						? "bg-gray-500"
+						: "bg-red-500 shadow-red-500/50"
+				} px-3 py-1 rounded-md text-white font-semibold shadow-lg text-sm`}
 				disabled={moviesNowPlaying.length === defaultMovieNowPlaying.length}
 			>
 				Reset

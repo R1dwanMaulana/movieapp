@@ -24,7 +24,7 @@ const Detail = () => {
 	// console.log(useParams());
 	const { id } = useParams();
 	return (
-		<div className="mx-8 mt-14">
+		<div className="mx-8 my-14">
 			<CardDetail detail={details} />
 		</div>
 	);
