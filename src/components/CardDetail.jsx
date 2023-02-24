@@ -49,7 +49,7 @@ const CardDetails = ({ detail }) => {
 					</div>
 				</div>
 			</div>
-			<p className="dark:text-white mt-6 lg:max-w-6xl lg:mx-auto sm:max-w-xl sm:mx-3">
+			<p className="text-white mt-6 lg:max-w-6xl lg:mx-auto sm:max-w-xl sm:mx-3">
 				<span className="font-semibold">Sinopsis</span>: {detail.overview}
 			</p>
 		</>
