@@ -9,7 +9,7 @@ const CardMovie = ({ movie }) => {
 					src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
 					alt=""
 				/>
-				<div className="dark:text-white mt-1">
+				<div className="text-white mt-1">
 					<p className="text-md font-semibold">{movie.title}</p>
 					<p className="text-sm">Rilis: {movie.release_date}</p>
 					<p className="text-sm">Populer: {movie.popularity}</p>

@@ -32,7 +32,7 @@ const CardDetails = ({ detail }) => {
 					src={`https://image.tmdb.org/t/p/w500/${detail.poster_path}`}
 					alt=""
 				/>
-				<div className="dark:text-white px-5">
+				<div className="text-white px-5">
 					<p className="lg:text-4xl text-lg font-semibold">{detail.title}</p>
 					<div className="lg:text-lg text-sm lg:mt-8 mt-3">
 						<p>
