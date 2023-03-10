@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import Home from './pages/Home';
 import Detail from './pages/Detail';
+import Trending from './pages/Trending';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route index element={<Home />}/>
           <Route path=":id" element={<Detail />}/>
         </Route>
+        <Route path="/Trending" element={<Trending/>}></Route>
 
       </Routes>
   );

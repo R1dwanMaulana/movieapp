@@ -22,7 +22,7 @@ const CardDetails = ({ detail }) => {
 						</svg>
 					</span>
 				</Link>
-				<p className="mb-6 py-1 bg-cyan-500 shadow-cyan-500/50 rounded-md px-1 text-white shadow-lg text-sm font-bold text-center">
+				<p className="mb-6 py-1 bg-gray-500 rounded-md px-1 text-white shadow-lg text-lg font-semibold text-center">
 					Detail
 				</p>
 			</div>

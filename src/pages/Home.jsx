@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import CardMovie from "../components/CardMovie";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+	const navigate = useNavigate();
 	const [moviesNowPlaying, setMoviesNowPlaying] = useState([]);
 	const [moviesUpComing, setMoviesUpComing] = useState([]);
 	const [moviesTopRated, setMoviesTopRated] = useState([]);
@@ -183,6 +185,13 @@ const Home = () => {
 			>
 				Reset
 			</button>
+			<p
+				onClick={() => navigate("/trending")}
+				className="mx-3 mt-7 cursor-pointer hover:text-orange-500 text-white font-semibold"
+			>
+				Trending
+			</p>
+
 			<div className="mx-8 mt-14 grid lg:grid-cols-6 md:grid-cols-4 grid-cols-2 gap-12">
 				{showMovieNowPlaying &&
 					moviesNowPlaying.map((movie) => (
