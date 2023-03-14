@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import CardDetail from "../components/CardDetail";
+import SimilarMovie from "../components/SimilarMovie";
 
 const Detail = () => {
 	const [details, setDetails] = useState([]);
@@ -26,6 +27,8 @@ const Detail = () => {
 	return (
 		<div className="mx-8 my-14">
 			<CardDetail detail={details} />
+			<p className="text-white text-lg font-bold mt-10">Similar Movie</p>
+			<SimilarMovie />
 		</div>
 	);
 };
