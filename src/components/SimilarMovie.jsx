@@ -29,9 +29,9 @@ const SimilarMovie = () => {
 			<Swiper
 				// slidesPerView={3}
 				// spaceBetween={10}
-				pagination={{
-					clickable: true,
-				}}
+				// pagination={{
+				// 	clickable: true,
+				// }}
 				breakpoints={{
 					375: {
 						slidesPerView: 3,
